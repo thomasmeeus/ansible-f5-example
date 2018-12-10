@@ -1,0 +1,4 @@
+[localhost]
+localhost ansible_connection=local ansible_python_interpreter=python
+[f5-test]
+# ip address of f5 to connect to

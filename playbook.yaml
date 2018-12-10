@@ -1,0 +1,16 @@
+---
+
+- name: Simple F5 ansible example
+  hosts: f5-test
+  connection: local
+
+  tasks:
+    - name: Get Node facts - "{{node_name}}"
+      bigip_facts:
+        validate_certs: false
+        server: "{{ ansible_host }}"
+        user: "{{ f5_username }}"
+        password: "{{ f5_password }}"
+        server_port: "{{ f5_server_port }}"
+        include: "interface"
+      register: bigip_facts

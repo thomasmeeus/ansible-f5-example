@@ -1,0 +1,10 @@
+---
+
+ansible_host:
+f5_username:
+f5_password:
+f5_server_port: 443
+validate_certs: no
+
+# Typically not needed, but included here because F5's test infra uses
+# a python interpreter in a docker container
