@@ -1,8 +1,8 @@
 ---
 
-ansible_host:
-f5_username:
-f5_password:
+ansible_host: # F5 ip address
+f5_username: # f5 username with admin role
+f5_password: # f5 password
 f5_server_port: 443
 validate_certs: no
 
